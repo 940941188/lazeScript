@@ -1,0 +1,2 @@
+# lazeScript
+Record some scripts
