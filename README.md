@@ -1,2 +1,3 @@
-# lazeScript
-Record some scripts
+# Sloth Script
+
+I'm very lazy...
