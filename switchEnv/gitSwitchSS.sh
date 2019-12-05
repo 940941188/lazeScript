@@ -5,7 +5,6 @@ case ${method} in
   -o)
     git config --global http.proxy $url
     git config --global https.proxy $url
-    git config --global http.sslVerify false
     echo 'git ss opene'
     ;;
   -c)
