@@ -2,17 +2,20 @@ method="${1}";
 case ${method} in
   -o) 
     sudo mkdir -p /etc/docker;
-    # sudo tee /etc/docker/daemon.json << 'EOF'{}EOF
+    sudo tee /etc/docker/daemon.json << EOF
+{}
+EOF
+
     sudo systemctl daemon-reload
     sudo systemctl restart docker
     ;;
   -a) 
     sudo mkdir -p /etc/docker;
-    # sudo tee /etc/docker/daemon.json << 'EOF'
-    # {
-    #   "registry-mirrors": ["https://yourcode.mirror.aliyuncs.com"]
-    # }
-    # EOF
+    sudo tee /etc/docker/daemon.json << EOF
+{
+  "registry-mirrors": ["https://r53k1kg3.mirror.aliyuncs.com"]
+}
+EOF
 
     sudo systemctl daemon-reload
     sudo systemctl restart docker
