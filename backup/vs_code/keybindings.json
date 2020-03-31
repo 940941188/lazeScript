@@ -1,0 +1,32 @@
+// 将键绑定放入此文件中以覆盖默认值
+[
+{ "key": "ctrl+shift+2",         "command": "extension.insertFileHeaderComment",
+                                    "when": "editorTextFocus"
+                                  },
+                                  {
+                                    "key": "alt+u alt+i",
+                                    "command": "extension.caniuse",
+                                    "when": "editorHasSelection"
+                                  },
+                                  {
+                                    "key": "alt+i",
+                                    "command": "-extension.caniuse",
+                                    "when": "editorHasSelection"
+                                  },
+                                  {
+                                    "key": "alt+o",
+                                    "command": "extension.setBrowserScope"
+                                  },
+                                  {
+                                    "key": "alt+b",
+                                    "command": "-extension.setBrowserScope"
+                                  },
+                                  {
+                                    "key": "ctrl+shift+q",
+                                    "command": "editor.action.transformToUppercase"
+                                  },
+                                  {
+                                    "key": "ctrl+alt+q",
+                                    "command": "editor.action.transformToLowercase"
+                                  }
+                                ]

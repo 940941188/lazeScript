@@ -1,0 +1,67 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "on",
+  "emmet.triggerExpansionOnTab": true,
+  
+  "typescript.check.npmIsInstalled": false,
+  
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.keymap": "alternate",
+  "workbench.colorTheme": "One Dark Pro",
+  
+  //auto-rename-tag
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "javascriptreact",
+    "javascript",
+    "typescriptreact",
+    "typescript",
+  ],
+
+  // file header
+  "fileheader.Author": "Ethan",
+  "fileheader.LastModifiedBy": "Ethan",
+  "fileheader.tpl": "/*\r\n * @Author: {author} \r\n * @Date: {createTime} \r\n * @Last Modified by:   {lastModifiedBy} \r\n * @Last Modified time: {updateTime} \r\n */\r\n",
+
+  //path-intellisense
+  "path-intellisense.extensionOnImport": true,
+  "path-intellisense.mappings": {
+    "/": "${workspaceRoot}",
+    "src": "${workspaceRoot}/src"
+  },
+  
+
+  //eslint
+  "eslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+    "./"
+  ],
+
+  //can i use
+  "caniuse.browser_scope": "> 1%, last 2 versions, Firefox ESR",
+  "go.inferGopath": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "cSpell.ignoreWords": [
+    "antd"
+  ],
+  "cSpell.userWords": [
+    "Dirent",
+    "LDAP",
+    "Suncity",
+    "YYYYMM",
+    "YYYYMMDD",
+    "empoid",
+    "webpackrc",
+    "xlink"
+  ],
+  "workbench.iconTheme": "vscode-icons",
+
+}
