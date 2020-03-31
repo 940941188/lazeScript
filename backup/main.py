@@ -39,7 +39,7 @@ class BackupApp(cli.Application):
           cp("-f", backup_file_path, target_path)
         print(colors.green | ('cp %s covers %s' % (backup_file_path, target_path)))
       else:
-        print(colors.red | ('file not found: %s' % target_path))
+        print(colors.red | ('file not found: %s' % backup_file_path))
     print("vscode config recover completed")
 
   @cli.switch(["-b", "--backup"], help="backup config")
