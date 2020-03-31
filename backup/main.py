@@ -5,7 +5,7 @@ from plumbum.cmd import cp, mv
 
 abs_path = os.path.abspath('.')
 
-vs_code_config_path=os.path.expanduser("~/.config/Code/User")
+vs_code_config_path=os.path.expanduser("~/.config/Code - OSS/User")
 vs_code_backup_path = os.path.join(abs_path, 'vs_code')
 vs_code_files = ['keybindings.json', 'settings.json', 'snippets']
 
@@ -32,7 +32,7 @@ class BackupApp(cli.Application):
     for file_name in vs_code_files:
       target_path = os.path.join(vs_code_config_path, file_name)
       backup_file_path = os.path.join(vs_code_backup_path, file_name)
-      if os.path.exists(target_path):
+      if os.path.exists(backup_file_path):
         if os.path.isdir(target_path):
           cp("-rf", backup_file_path, vs_code_config_path)
         else:
